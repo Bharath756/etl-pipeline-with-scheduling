@@ -1,0 +1,15 @@
+{
+  "Transaction_ID": "string",
+  "Date": "datetime",
+  "Customer_Name": "string",
+  "Product": "string",
+  "Total_Items": "integer",
+  "Total_Cost": "float",
+  "Payment_Method": "string",
+  "City": "string",
+  "Store_Type": "string",
+  "Discount_Applied": "boolean",
+  "Customer_Category": "string",
+  "Season": "string",
+  "Promotion": "string"
+}
