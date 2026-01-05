@@ -1,11 +1,16 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 import time
 import logging
 from pathlib import Path
 import pandas as pd
 
-from src.extract import extract_transactions, load_schema
-from src.transform import transform_transactions
-from src.load import load_to_db
+from extract import extract_transactions, load_schema
+from transform import transform_transactions
+from load import load_to_db
 
 RAW_DATA_PATH = Path("data/raw/Retail_Transactions_Dataset_sample.csv")
 SCHEMA_PATH = Path("data/raw/schema.json")
