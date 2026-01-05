@@ -38,12 +38,12 @@ def transform_transactions(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 if __name__ == "__main__":
-    raw_df = pd.read_csv("data/raw/transactions.csv")
+    raw_df = pd.read_csv("data/raw/Retail_Transactions_Dataset_sample.csv")
 
     processed_df = transform_transactions(raw_df)
 
     processed_df.to_csv(
-        "data/processed/transactions_clean.csv",
+        "data/processed/Retail_Transactions_Dataset_clean.csv",
         index=False
     )
 
